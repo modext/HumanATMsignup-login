@@ -19,6 +19,7 @@
         .signup-body{
             font-size: 100%;
             box-sizing: border-box;
+            font-family: Lato, sans-serif;
         }
         .signup-container{
             display:-webkit-flex;
@@ -32,7 +33,6 @@
             left:0;
             right:0;
             background-color:#0F3B75;
-            font-style: san-serif;
             color: #fff;
         }
         .signup-content{
@@ -82,6 +82,7 @@
         }
         #signup-submit{
             font-size: 1.5em;
+            font-weight:bold;
             width: 60%;
             margin: 0 auto;
             color:#0F3B75;
@@ -102,12 +103,8 @@
         #signup-signin a{
             color: white;  
         }
-        @media screen and (max-width:500px){
-            #signup-submit{
-                font-size:1.3em;
-            }
-        }
-        .signup-data:focus{
+
+        .signup-data:focus, .signup-data:hover{
             border: 2px solid #0F3B75;
             box-shadow: 0 0 5px #fff;
         }
@@ -130,6 +127,9 @@
             align-self: flex-end;            
         }
         @media screen and (max-width:500px){
+            #signup-submit{
+                font-size:1.3em;
+            }
             #login-span, #login-span1{
                 display: block;
                 text-align:center;

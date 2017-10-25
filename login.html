@@ -19,6 +19,7 @@
         .signup-body{
             font-size: 100%;
             box-sizing: border-box;
+            font-family: Lato, sans-serif;
         }
         .signup-container{
             display:-webkit-flex;
@@ -32,7 +33,6 @@
             left:0;
             right:0;
             background-color:#0F3B75;
-            font-style: san-serif;
             color: #fff;
         }
         .signup-content{
@@ -81,6 +81,7 @@
         }
         #login-submit{
             font-size: 1.5em;
+            font-weight: bold;
             width: 50%;
             margin: 0 auto;
             color:#0F3B75;
@@ -108,7 +109,7 @@
         #signup-signin a, #signup-forgot a{
             color: white;  
         }
-        .signup-data:focus{
+        .signup-data:focus, .signup-data:hover{
             border: 2px solid #0F3B75;
             box-shadow: 0 0 5px #fff;
         }
@@ -230,7 +231,7 @@
                             </svg>
                             
                 </div>
-                <div>
+                <div class="signup-h1">
                     <p id='signup-head'>HumanATM</p>
                     <p id='signup-p'>FOR THE NEXT BILLION USERS</p>
                 </div>                
