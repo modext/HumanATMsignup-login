@@ -237,7 +237,7 @@
     <section>
         <?php include('footer.php'); ?>
     </section>
-    <script src="/HumanATMsignup-login/togglepassword.js">       
+    <script src="/signup-login/togglepassword.js">       
     </script>
     
 </body>
