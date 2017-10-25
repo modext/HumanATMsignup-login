@@ -18,12 +18,13 @@
     <style>
         .signup-body{
             font-size: 100%;
+            box-sizing: border-box;
         }
         .signup-container{
             display:-webkit-flex;
             display:flex;
             max-width: 760px;
-            height: -webkit-fill-available;
+            min-height: 650px;
             margin: auto;
             position: relative;
             top: 0px;
@@ -36,7 +37,7 @@
         }
         .signup-content{
             position: absolute;
-            top: 30px;
+            top: 50px;
             bottom: 30px;
             left: 0;
             right: 0;
@@ -45,17 +46,24 @@
         }
         .signup-header{
             text-align: center;
-            line-height: 0;
         }
+        .signup-h1{
+            max-width: 157px;
+            margin: auto;
+            text-align: left;
+            height: auto;
+        }
+
         #signup-head{
-            margin-top: 20px;
-            margin-bottom: 15px;
+            margin-top: 15px;
+            margin-bottom:0;
             font-size: 3em;
+            height: 33px;
         }
         #signup-p{
             font-variant: small-caps;
-            margin-left:-48.5px;
-            font-size: 0.7em;            
+            font-size: 0.8em;
+            padding-left: 0.2em;            
         }
         .signup-form{
             margin-top: 20px;
@@ -64,10 +72,6 @@
             display: flex;
             flex-direction: column;
     
-        }
-        .signup-innerform i {
-       
-        
         }
         .signup-data{
             font-size: 1.5em;
@@ -80,7 +84,6 @@
             font-size: 1.5em;
             width: 60%;
             margin: 0 auto;
-            margin-top: 30px;
             color:#0F3B75;
             padding:8px 3px;
             padding-right:3px;
@@ -92,8 +95,9 @@
             color: white;  
             font-size: 1.2em;
             text-align:right;
+            margin-top: 10px;
             margin-right: 130px;
-            width:80%;
+            max-width:80%;
         }
         #signup-signin a{
             color: white;  
@@ -123,16 +127,28 @@
             width:10%;
             color: #0F3B75;
             font-size:1.6em;
-            align-self: flex-end;
-            
+            align-self: flex-end;            
+        }
+        @media screen and (max-width:500px){
+            #login-span, #login-span1{
+                display: block;
+                text-align:center;
+                width: 100%;    
+            }
+            #signup-signin{
+            margin-right: 0;
+            max-width:100%;
+        }
         }
 
+        
+        
     </style>
 </head>
 
 <body class='signup-body'>
     <section>
-        <?php include('header.php'); ?>
+        
     </section>
     <section id='' class='signup-container'>
         <div class = "container signup-content">
@@ -214,7 +230,7 @@
                             </svg>
                             
                 </div>
-                <div>
+                <div class="signup-h1">
                     <p id='signup-head'>HumanATM</p>
                     <p id='signup-p'>FOR THE NEXT BILLION USERS</p>
                 </div>                
@@ -227,7 +243,8 @@
                     <input type="password" name="signup-password" id="signup-password" class="signup-data" placeholder="Password">
                     <p class='signup-eye'><i class="glyphicon glyphicon-eye-close"></i></p>
                     <input type="submit" class="signup-data" id="signup-submit"value="CREATE PASSWORD">
-                    <p id='signup-signin'><a href="login.php" class="" >Have an account? Sign In</a></P>
+                    <p id='signup-signin'><a href="login.php" class="" ><span id="login-span1">Have an account?</span> 
+                        <span id="login-span">Sign In</span></a></p>
                 </form>
             </div>               
             
@@ -235,7 +252,7 @@
     </section>
     
     <section>
-        <?php include('footer.php'); ?>
+        
     </section>
     <script src="/HumanATMsignup-login/togglepassword.js">       
     </script>

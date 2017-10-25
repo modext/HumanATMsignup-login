@@ -18,6 +18,7 @@
     <style>
         .signup-body{
             font-size: 100%;
+            box-sizing: border-box;
         }
         .signup-container{
             display:-webkit-flex;
@@ -36,8 +37,8 @@
         }
         .signup-content{
             position: absolute;
-            top: 30px;
-            bottom: 100px;
+            top: 50px;
+            bottom: 30px;
             left: 0;
             right: 0;
             width:90%;
@@ -45,17 +46,23 @@
         }
         .signup-header{
             text-align: center;
-            line-height: 0;
+        }
+        .signup-h1{
+            max-width: 157px;
+            margin: auto;
+            text-align: left;
+            height: auto;
         }
         #signup-head{
-            margin-top: 20px;
-            margin-bottom: 15px;
+            margin-top: 15px;
+            margin-bottom: 0;
             font-size: 3em;
+            height: 33px;
         }
         #signup-p{
             font-variant: small-caps;
-            margin-left:-48.5px;
-            font-size: 0.7em;            
+            font-size: 0.8em;
+            padding-left: 0.2em;            
         }
         .signup-form{
             margin-top: 20px;
@@ -87,6 +94,7 @@
             color: white;  
             font-size: 1.2em;
             text-align:right;
+            margin-top: 10px;
             margin-right: 130px;
             max-width:75%;
         }
@@ -140,7 +148,7 @@
 
 <body class='signup-body'>
     <section>
-        <?php include('header.php'); ?>
+       
     </section>
     <section id='' class='signup-container'>
         <div class = "container signup-content">
@@ -243,7 +251,7 @@
     </section>
     
     <section>
-        <?php include('footer.php'); ?>
+        
     </section>
     <script src="/HumanATMsignup-login/togglepassword.js">       
     </script>
